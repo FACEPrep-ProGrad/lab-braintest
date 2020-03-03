@@ -1,4 +1,5 @@
 package service;
+import java.util.Scanner;
 
 // Create a class called PersonalityCalculator
 // PersonalityCalculator has two methods findAnswers and findYourBrainType
@@ -9,3 +10,20 @@ package service;
 // Use the split method to segregate the options and store it in a string array.
 // Convert the string array into an integer array.
 // return the entire integer array to findyourBrainType
+class PersonalityCalculator{
+	findAnswers(){
+		String[] array = new String[6];
+		Scanner sc = new Scanner(System.in);
+		for(int i=0;i<=6;i++)
+		{
+			array[i]=sc.nextLine();
+		}
+	findYourBrainType(){
+		String[] array = new String[6];
+		Scanner sc = new Scanner(System.in);
+		for(int i=0;i<=6;i++)
+		{
+			array[i]=sc.nextLine();
+		}
+}
+}
