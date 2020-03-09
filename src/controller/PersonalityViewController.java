@@ -38,12 +38,14 @@ public class PersonalityViewController extends HttpServlet {
 		String options=request.getParameter("selectedOptions");
 		
 		System.out.println(options);
-		PersonalityCalculator obj= new PersonalityCalculator();
-        String message= obj.findYourBrainType(options);
+		
 		
 		
 		// create an object for the PersonalityCalculator
 		// call the findYourBrainType method using the object created above and pass options as argument.
+		
+		PersonalityCalculator obj= new PersonalityCalculator();
+        String message= obj.findYourBrainType(options);
 		// The value returned from the method is of type string.
 		// Store the String returned in a string literal called as message
 		

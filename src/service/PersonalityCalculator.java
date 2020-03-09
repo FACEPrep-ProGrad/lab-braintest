@@ -21,7 +21,7 @@ public class  PersonalityCalculator
 		int value=c.length;
 		int array[]=new int[value];
 		int i=0;
-		for(String s:c)
+		for(String s:c) //enhanced for-loop
 		{
 			array[i]=Integer.parseInt(s);
 			i++;
@@ -39,7 +39,7 @@ public class  PersonalityCalculator
 		int x=array[0]+array[1]+array[2]+array[4]+array[7]+array[9]+array[10]+array[11]+array[13]+array[17]+array[19];
 		int y=array[3]+array[5]+array[6]+array[12]+array[14]+array[15]+array[16]+array[18];
 		int z=66-x+y;
-		System.out.println("Yor total score "+z);
+		System.out.println("Your total score "+z);
 		if((z>=22)&&(z<=55))
 			return "Left-brained ";
 		if((z>=56)&&(z<=64))
