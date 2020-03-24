@@ -39,7 +39,7 @@ public class PersonalityViewController extends HttpServlet {
 	    String message = person.findYourBrainType(options);
 
 		request.setAttribute("message", message);
-		
+		System.out.println(message);
 		if(message!=null)
 		{
 			if(message.equals("rightbrained")) {

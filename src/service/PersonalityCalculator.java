@@ -3,15 +3,16 @@ public class PersonalityCalculator
 {
 	public String findYourBrainType(String inp)
 	{
-		
+		System.out.println(inp);
 		int x = findAnswers(inp);
 		String str ="";
 	      if(x>=20 && x <= 55)
-	    	  str = "Left-brained";
+	    	  str = "leftbrained";
 	      if(x>=56 && x <=64)
 	    	  str = "No clear preference";
 	      if(x>=65 && x<=100)
-	    	  str = "Right-brained";
+	    	  str = "rightbrained";
+	      System.out.println(str);
 		return str;
 	}
 	public int findAnswers(String inp)
