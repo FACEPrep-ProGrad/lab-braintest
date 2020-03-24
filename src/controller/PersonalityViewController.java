@@ -34,6 +34,10 @@ public class PersonalityViewController extends HttpServlet {
 		String options=request.getParameter("selectedOptions");
 		
 		System.out.println(options);
+		
+		PersonalityCalculator obj=new PersonalityCalculator();
+		
+		String message=obj.findYourBrainType(options);
 
 		request.setAttribute("message", message);
 		
@@ -54,9 +58,9 @@ public class PersonalityViewController extends HttpServlet {
 		
 		}
 		}
-	public static void main(String[] args) {
-		PersonalityCalculator obj=new PersonalityCalculator();
-		String message = obj.findYourBrain(options);
-	}
+//	public static void main(String[] args) {
+//		PersonalityCalculator obj=new PersonalityCalculator();
+//		String message = obj.findYourBrain(options);
+//	}
 	
 	}
