@@ -1,6 +1,5 @@
 package test;
 
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -17,7 +16,7 @@ public class TestPersonalityCalculator {
 		options = "4,5,4,2,5,3,2,4,3,5,4,5,2,4,3,2,3,5,2,4";
 		assertEquals("leftbrained",pc.findYourBrainType(options));
 		options = "1,2,3,2,1,4,2,2,2,2,2,4,3,2,3,4,2,3,2,4";
-		assertEquals("No clear preference",pc.findYourBrainType(options));
+		assertEquals("noclearpreference",pc.findYourBrainType(options));
 		try {
 			if(options.contains("0"))
 				pc.findYourBrainType(options);
